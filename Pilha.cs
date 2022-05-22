@@ -27,7 +27,7 @@ namespace Pilha
 
         public bool isRedEmpty()
         {
-            return t == -1;
+            return VIndex == -1;
         }
         public bool isBlackEmpty()
         {
