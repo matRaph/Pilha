@@ -11,7 +11,7 @@ namespace Pilha
         //Tamanho da pilha
         public int t { get; set; }
         //Array
-        public int?[] arr { get; set; }
+        public object[] arr { get; set; }
         //Índice rubro
         public int VIndex { get; set; }
         //Índice negro
@@ -20,7 +20,7 @@ namespace Pilha
         public Pilha(int t)
         {
             this.t = t;
-            arr = new int?[t];
+            arr = new object[t];
             VIndex = -1;
             PIndex = t;
         }
@@ -105,7 +105,7 @@ namespace Pilha
 
         public void dobrar()
         {
-            int?[] newArray = new int?[t * 2];
+            object[] newArray = new object[t * 2];
             int count = newArray.Length - 1;
 
             for (int i = 0; i <= VIndex; i++)
